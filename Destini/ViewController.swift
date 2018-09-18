@@ -75,6 +75,11 @@ class ViewController: UIViewController {
             storyTextView.text = story5
             topButton.isHidden = true
             bottomButton.isHidden = true
+        } else if sender.tag == 1 && storyIndex == 2 {
+            storyTextView.text = story3
+            topButton.setTitle(answer3a, for: .normal)
+            bottomButton.setTitle(answer3b, for: .normal)
+            storyIndex = 3
         }
                 
         // TODO Step 6: Modify the IF-Statement to complete the story
